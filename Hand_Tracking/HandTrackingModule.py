@@ -100,6 +100,7 @@ def main():
     cap = cv2.VideoCapture(1)
     detector = handDetector()
     while True:
+
         success, img = cap.read()
         img = detector.findHands(img)
         lmList, bbox = detector.findPosition(img)
