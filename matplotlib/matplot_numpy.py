@@ -56,5 +56,25 @@ import numpy as np
 
 ypoints = np.array([3, 8, 1, 10])
 
-plt.plot(ypoints, marker = 'o', ms = 20)
+# plt.plot(ypoints, marker = 'o', ms = 20)
+# plt.show()
+
+
+# change color of marker
+# plt.plot(ypoints, marker = 'o', ms = 20, mec = 'hotpink', mfc = 'hotpink')
+# plt.show()
+
+# plt.plot(ypoints, linestyle = 'dotted')
+# # much more shorter way for this
+# # plt.plot(ypoints, ls = ':')
+# plt.show()
+
+
+# # simple color line
+# plt.plot(ypoints, color = 'r') # at color you can use any color ans also use the color code
+# plt.show()
+
+# for line width
+
+plt.plot(ypoints, linewidth = '20.5')
 plt.show()
