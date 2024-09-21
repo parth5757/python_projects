@@ -105,6 +105,7 @@
 
 # ORIGINAL
 import cv2
+from cvzone.HandTrackingModule import HandDetector
 import mediapipe as mp
 import pyautogui
 cam = cv2.VideoCapture(0)
