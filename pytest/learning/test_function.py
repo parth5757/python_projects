@@ -21,6 +21,3 @@ def test_cube():
     nums = 5
     result = cube(nums)
     assert result == nums ** 3, "cube is not done"
-
-
-test_cube()

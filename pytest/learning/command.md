@@ -27,3 +27,23 @@ pytest tets_function.py::test_cube
 pytest test_function.py -k cube
 ```
 
+
+<!-- Now Test classes journey -->
+
+- if we want to do an group of class of multiple function at that time we can also use pytest
+
+- to run all testclass we use following command
+```
+pytest --collectonly
+```
+
+- same as for particular file we use following command
+```shell
+pytest test_class.py (pytest filename)
+```
+
+- To run particular test class we use this command
+```shell
+pytest test_class.py::TestClass
+```
+
