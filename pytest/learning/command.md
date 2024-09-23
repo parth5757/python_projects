@@ -47,3 +47,34 @@ pytest test_class.py (pytest filename)
 pytest test_class.py::TestClass
 ```
 
+
+Skipping Tests
+
+there are lot of test when we want to skip some test at that time we use skipping test function
+
+test_skip_0.py
+- it show example how skip test
+
+test_skip_1.py
+- in this show example of TestClass 
+
+test_skip_2.py
+- it show the example where without using the pytest decorater we can use pytest
+
+test_skip_3.py
+- it add reason the why we added to skip the test.
+
+'''shell
+pytest test_skip_3.py -rs
+'''
+this command use get reason in terminal
+
+test_skip_4.py
+- it is use for adding version specification when we want any function must be test with an particular version 
+'''shell
+pytest test_skip_3.py -rs
+'''
+this command use get reason and version info in terminal
+
+test_skip_5.py
+- it is use to skip any module import in file
