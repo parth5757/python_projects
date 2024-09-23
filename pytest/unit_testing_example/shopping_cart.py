@@ -23,3 +23,16 @@ class ShoppingCart:
             total_price += price_map.get(item)
             print(total_price)
         return total_price
+
+# if __name__ == "__main__":
+#     cart = ShoppingCart(max_size=5)
+#     cart.add("Mung")
+#     cart.add("Rajma")
+    
+#     price_map = {
+#         "Mung": 1.5,
+#         "Rajma": 2.0
+#     }
+    
+#     total_price = cart.get_total_price(price_map)
+#     print(f"Total price: {total_price}")
