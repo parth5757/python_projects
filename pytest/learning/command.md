@@ -78,3 +78,25 @@ this command use get reason and version info in terminal
 
 test_skip_5.py
 - it is use to skip any module import in file
+
+XFail test
+
+XFail: mark test functions as expected to fail
+
+- You can use the xfail marker to indicate that you expect a test to fail:
+read for more 
+https://docs.pytest.org/en/stable/how-to/skipping.html#
+
+
+
+
+
+
+
+
+
+
+# fixture learning from unit  testing example
+
+- In testing, a fixture provides a defined , reliable and consistent context for the tests.
+
