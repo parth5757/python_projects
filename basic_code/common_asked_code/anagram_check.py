@@ -9,6 +9,10 @@ def are_anagrams(str1, str2):
                     str[i] = temp    
         return str
 
+    def quick_sort(str):
+
+
+
     sorted_str1 = bubble_sort(list(str1))
     print(sorted_str1)
     sorted_str2 = sorted(str2)
