@@ -48,7 +48,11 @@ pytest test_class.py::TestClass
 ```
 
 
-Skipping Tests
+
+
+
+
+<h2>Skipping Tests</h2>
 
 there are lot of test when we want to skip some test at that time we use skipping test function
 
@@ -64,9 +68,9 @@ test_skip_2.py
 test_skip_3.py
 - it add reason the why we added to skip the test.
 
-'''shell
+```shell
 pytest test_skip_3.py -rs
-'''
+```
 this command use get reason in terminal
 
 test_skip_4.py
@@ -79,7 +83,7 @@ this command use get reason and version info in terminal
 test_skip_5.py
 - it is use to skip any module import in file
 
-XFail test
+<h2>xFail test</h2>
 
 XFail: mark test functions as expected to fail
 
@@ -88,6 +92,13 @@ read for more
 https://docs.pytest.org/en/stable/how-to/skipping.html#
 
 
+<h2>Parametrize</h2> 
+
+-   It use for multiple parameter are use to test the any function.
+
+```shell
+pytest --collectonly test_parametrize_0.py
+```
 
 
 
@@ -96,7 +107,7 @@ https://docs.pytest.org/en/stable/how-to/skipping.html#
 
 
 
-# fixture learning from unit  testing example
+<h2>fixture learning from unit  testing example</h2>
 
 - In testing, a fixture provides a defined , reliable and consistent context for the tests.
 
