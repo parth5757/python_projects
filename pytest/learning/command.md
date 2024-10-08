@@ -147,3 +147,9 @@ test_fixture_0.py [code](test_fixture_0.py)
 - in this simple fixture value been initialize. and without adding any pytest decorator we can easily test the function.
 way of executing ```pytest test_fixture_0.py```, ```pytest --collectonly test_fixture_0.py``` & last one is that the fixture where we see all fixture detail for initialization
 ```pytest --fixtures test_fixture_0.py```.
+
+test_fixture_1.py [code](test_fixture_1.py)
+
+- to add log message while testing. run using ```pytest test_fixture_1.py -s``` command.
+
+
