@@ -132,8 +132,18 @@ pytest --collectonly test_parametrize_4.py -k id_of_test_parameter
 else 
 other command like
 ```pytest```, ```pytest test_parametrize_4.py```, ```pytest --collectonly test_parametrize_4.py```
-<!-- 
+
 <h2>fixture learning from unit  testing example</h2>
 
+[Documentation](https://docs.pytest.org/en/4.6.x/fixture.html#:~:text=fixtures%20have%20explicit%20names%20and%20are%20activated%20by%20declaring)
+
+- It initialize the test function with give value.
+- pytest fixture is provide adding initial value in separate value in pytest this thing make now require to add pytest parameters.
+
 - In testing, a fixture provides a defined , reliable and consistent context for the tests.
- -->
+
+test_fixture_0.py [code](test_fixture_0.py)
+
+- in this simple fixture value been initialize. and without adding any pytest decorator we can easily test the function.
+way of executing ```pytest test_fixture_0.py```, ```pytest --collectonly test_fixture_0.py``` & last one is that the fixture where we see all fixture detail for initialization
+```pytest --fixtures test_fixture_0.py```.
