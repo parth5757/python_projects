@@ -118,9 +118,12 @@ test_parametrize_2.py
 
 - In this example we show how we can take pair of multiple input with expectation 
 
+test_parametrize_3.py
 
+-   ``` pytest.param(3, marks=pytest.mark.skip ```
+    this thing use in skipping any particular in given test parameters
 
-
+(Note: in this if you have use ```pytest``` & ```pytest test_parametrize_3.py``` command to run then it regularly see as skip test but not in collectonly command ```pytest --collectonly test_parametrize_3.py```)
 
 
 
