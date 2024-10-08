@@ -87,9 +87,9 @@ test_skip_5.py
 
 XFail: mark test functions as expected to fail
 
-- You can use the xfail marker to indicate that you expect a test to fail:
-read for more 
-https://docs.pytest.org/en/stable/how-to/skipping.html#
+- You can use the xfail marker to indicate that you expect a test to fail
+
+- to read for more [click here](https://docs.pytest.org/en/stable/how-to/skipping.html#)
 
 
 <h2>Parametrize</h2> 
@@ -99,6 +99,19 @@ https://docs.pytest.org/en/stable/how-to/skipping.html#
 ```shell
 pytest --collectonly test_parametrize_0.py
 ```
+read for more [click here](https://docs.pytest.org/en/6.2.x/parametrize.html)
+
+
+test_parametrize_0.py
+- it shows the single function multiple parameter with only input.
+
+
+test_parametrize_0.py
+- it shows the only one input parametrize test
+
+test_parametrize_0.py
+
+- it shows the input with excepted output parametrize test
 
 
 
@@ -107,7 +120,44 @@ pytest --collectonly test_parametrize_0.py
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <h2>fixture learning from unit  testing example</h2>
 
 - In testing, a fixture provides a defined , reliable and consistent context for the tests.
-
+ -->
