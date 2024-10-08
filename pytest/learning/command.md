@@ -109,11 +109,14 @@ test_parametrize_0.py
 test_parametrize_0.py
 - it shows the only one input parametrize test
 
-test_parametrize_0.py
+test_parametrize_1.py
 
 - it shows the input with excepted output parametrize test
 
 
+test_parametrize_2.py
+
+- In this example we show how we can take pair of multiple input with expectation 
 
 
 
