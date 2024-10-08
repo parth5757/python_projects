@@ -133,7 +133,7 @@ else
 other command like
 ```pytest```, ```pytest test_parametrize_4.py```, ```pytest --collectonly test_parametrize_4.py```
 
-<h2>fixture learning from unit  testing example</h2>
+<h2>fixture testing example</h2>
 
 [Documentation](https://docs.pytest.org/en/4.6.x/fixture.html#:~:text=fixtures%20have%20explicit%20names%20and%20are%20activated%20by%20declaring)
 
@@ -154,5 +154,9 @@ test_fixture_1.py [code](test_fixture_1.py)
 
 
 test_fixture_2.py [code](test_fixture_2.py)
-- it use to combine test multiple function once using scope module or function.
-- if you change it to function then it separately initialize sane value for function.
+- It use to combine test multiple function once using scope module or function.
+- If you change it to function then it separately initialize sane value for function.
+
+
+<h2>pytest fixture conftest file</h2>
+- It is an file provided with already added configuration for pytest fixture don't even 
