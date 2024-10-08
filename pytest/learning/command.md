@@ -153,3 +153,6 @@ test_fixture_1.py [code](test_fixture_1.py)
 - to add log message while testing. run using ```pytest test_fixture_1.py -s``` command.
 
 
+test_fixture_2.py [code](test_fixture_2.py)
+- it use to combine test multiple function once using scope module or function.
+- if you change it to function then it separately initialize sane value for function.
