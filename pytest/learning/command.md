@@ -56,16 +56,16 @@ pytest test_class.py::TestClass
 
 there are lot of test when we want to skip some test at that time we use skipping test function
 
-test_skip_0.py
+test_skip_0.py  [code](test_skip_0.py)
 - it show example how skip test
 
-test_skip_1.py
+test_skip_1.py  [code](test_skip_1.py)
 - in this show example of TestClass 
 
-test_skip_2.py
+test_skip_2.py  [code](test_skip_2.py)
 - it show the example where without using the pytest decorater we can use pytest
 
-test_skip_3.py
+test_skip_3.py  [code](test_skip_3.py)
 - it add reason the why we added to skip the test.
 
 ```shell
@@ -73,14 +73,14 @@ pytest test_skip_3.py -rs
 ```
 this command use get reason in terminal
 
-test_skip_4.py
+test_skip_4.py  [code](test_skip_4.py)
 - it is use for adding version specification when we want any function must be test with an particular version 
 '''shell
 pytest test_skip_3.py -rs
 '''
 this command use get reason and version info in terminal
 
-test_skip_5.py
+test_skip_5.py [code](test_skip_5.py)
 - it is use to skip any module import in file
 
 <h2>xFail test</h2>
@@ -102,66 +102,36 @@ pytest --collectonly test_parametrize_0.py
 read for more [click here](https://docs.pytest.org/en/6.2.x/parametrize.html)
 
 
-test_parametrize_0.py
+test_parametrize_0.py [code](test_parametrize_0.py)
 - it shows the single function multiple parameter with only input.
 
-
-test_parametrize_0.py
-- it shows the only one input parametrize test
-
-test_parametrize_1.py
+test_parametrize_1.py   [code](test_parametrize_1.py)
 
 - it shows the input with excepted output parametrize test
 
 
-test_parametrize_2.py
+test_parametrize_2.py   [code](test_parametrize_2.py)
 
 - In this example we show how we can take pair of multiple input with expectation 
 
-test_parametrize_3.py
-
+test_parametrize_3.py   [code](test_parametrize_3.py)
 -   ``` pytest.param(3, marks=pytest.mark.skip ```
     this thing use in skipping any particular in given test parameters
 
 (Note: in this if you have use ```pytest``` & ```pytest test_parametrize_3.py``` command to run then it regularly see as skip test but not in collectonly command ```pytest --collectonly test_parametrize_3.py```)
 
 
+test_parametrize_4.py   [code](test_parametrize_4.py)
 
+-  nothing new just add id of each parameter shown in example. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-   want to execute the specific id test then only use then use following command
+```
+pytest --collectonly test_parametrize_4.py -k id_of_test_parameter
+```
+else 
+other command like
+```pytest```, ```pytest test_parametrize_4.py```, ```pytest --collectonly test_parametrize_4.py```
 <!-- 
 <h2>fixture learning from unit  testing example</h2>
 
