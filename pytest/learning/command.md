@@ -160,3 +160,11 @@ test_fixture_2.py [code](test_fixture_2.py)
 
 <h2>pytest fixture conftest file</h2>
 - It is an file provided with already added configuration for pytest fixture don't even 
+
+test_conftest_0.py [code](test_conftest_0.py)
+
+- In this code the how initialize fixture with conftest is shown
+
+test_conftest_1.py [code](test_conftest_1.py)
+
+- It show how to give message while testing any function.
