@@ -168,3 +168,9 @@ test_conftest_0.py [code](test_conftest_0.py)
 test_conftest_1.py [code](test_conftest_1.py)
 
 - It show how to give message while testing any function.
+
+test_conftest_2.py [code](test_conftest_2.py)
+- In that it made for parent and current directory diffence understand in file directory there is an conftest.py file then it directly use that directory file not parent directory.
+
+(Note: here no parent current directory made if you want to show example)
+
