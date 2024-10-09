@@ -56,16 +56,16 @@ pytest test_class.py::TestClass
 
 there are lot of test when we want to skip some test at that time we use skipping test function
 
-test_skip_0.py  [code](test_skip_0.py)
+test_skip_0.py  [code](pytest_skip/test_skip_0.py)
 - it show example how skip test
 
-test_skip_1.py  [code](test_skip_1.py)
+test_skip_1.py  [code](pytest_skip/test_skip_1.py)
 - in this show example of TestClass 
 
-test_skip_2.py  [code](test_skip_2.py)
+test_skip_2.py  [code](pytest_skip/test_skip_2.py)
 - it show the example where without using the pytest decorater we can use pytest
 
-test_skip_3.py  [code](test_skip_3.py)
+test_skip_3.py  [code](pytest_skip/test_skip_3.py)
 - it add reason the why we added to skip the test.
 
 ```shell
@@ -73,14 +73,14 @@ pytest test_skip_3.py -rs
 ```
 this command use get reason in terminal
 
-test_skip_4.py  [code](test_skip_4.py)
+test_skip_4.py  [code](pytest_skip/test_skip_4.py)
 - it is use for adding version specification when we want any function must be test with an particular version 
 '''shell
 pytest test_skip_3.py -rs
 '''
 this command use get reason and version info in terminal
 
-test_skip_5.py [code](test_skip_5.py)
+test_skip_5.py [code](pytest_skip/test_skip_5.py)
 - it is use to skip any module import in file
 
 <h2>xFail test</h2>
@@ -102,26 +102,26 @@ pytest --collectonly test_parametrize_0.py
 read for more [click here](https://docs.pytest.org/en/6.2.x/parametrize.html)
 
 
-test_parametrize_0.py [code](test_parametrize_0.py)
+test_parametrize_0.py [code](parametrize/test_parametrize_0.py)
 - it shows the single function multiple parameter with only input.
 
-test_parametrize_1.py   [code](test_parametrize_1.py)
+test_parametrize_1.py   [code](parametrize/test_parametrize_1.py)
 
 - it shows the input with excepted output parametrize test
 
 
-test_parametrize_2.py   [code](test_parametrize_2.py)
+test_parametrize_2.py   [code](parametrize/test_parametrize_2.py)
 
 - In this example we show how we can take pair of multiple input with expectation 
 
-test_parametrize_3.py   [code](test_parametrize_3.py)
+test_parametrize_3.py   [code](parametrize/test_parametrize_3.py)
 -   ``` pytest.param(3, marks=pytest.mark.skip ```
     this thing use in skipping any particular in given test parameters
 
 (Note: in this if you have use ```pytest``` & ```pytest test_parametrize_3.py``` command to run then it regularly see as skip test but not in collectonly command ```pytest --collectonly test_parametrize_3.py```)
 
 
-test_parametrize_4.py   [code](test_parametrize_4.py)
+test_parametrize_4.py   [code](parametrize/test_parametrize_4.py)
 
 -  nothing new just add id of each parameter shown in example. 
 
@@ -142,18 +142,18 @@ other command like
 
 - In testing, a fixture provides a defined , reliable and consistent context for the tests.
 
-test_fixture_0.py [code](test_fixture_0.py)
+test_fixture_0.py [code](fixtures/test_fixture_0.py)
 
 - in this simple fixture value been initialize. and without adding any pytest decorator we can easily test the function.
 way of executing ```pytest test_fixture_0.py```, ```pytest --collectonly test_fixture_0.py``` & last one is that the fixture where we see all fixture detail for initialization
 ```pytest --fixtures test_fixture_0.py```.
 
-test_fixture_1.py [code](test_fixture_1.py)
+test_fixture_1.py [code](fixtures/test_fixture_1.py)
 
 - to add log message while testing. run using ```pytest test_fixture_1.py -s``` command.
 
 
-test_fixture_2.py [code](test_fixture_2.py)
+test_fixture_2.py [code](fixtures/test_fixture_2.py)
 - It use to combine test multiple function once using scope module or function.
 - If you change it to function then it separately initialize sane value for function.
 
@@ -161,16 +161,20 @@ test_fixture_2.py [code](test_fixture_2.py)
 <h2>pytest fixture conftest file</h2>
 - It is an file provided with already added configuration for pytest fixture don't even 
 
-test_conftest_0.py [code](test_conftest_0.py)
+test_conftest_0.py [code](conftest/test_conftest_0.py)
 
 - In this code the how initialize fixture with conftest is shown
 
-test_conftest_1.py [code](test_conftest_1.py)
+test_conftest_1.py [code](conftest/test_conftest_1.py)
 
 - It show how to give message while testing any function.
 
-test_conftest_2.py [code](test_conftest_2.py)
+test_conftest_2.py [code](conftest/test_conftest_2.py)
 - In that it made for parent and current directory diffence understand in file directory there is an conftest.py file then it directly use that directory file not parent directory.
 
 (Note: here no parent current directory made if you want to show example)
 
+
+## forwarding_parameter_fixture
+
+- is use for same time parameter forward from conftest perform fixture initialize value.
