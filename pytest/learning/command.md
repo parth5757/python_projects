@@ -175,6 +175,14 @@ test_conftest_2.py [code](conftest/test_conftest_2.py)
 (Note: here no parent current directory made if you want to show example)
 
 
-## forwarding_parameter_fixture
+## forwarding_parameter_fixture [code](forwarding_parameter_fixture/test_param_forwarding_fixtures_0.py)
 
 - is use for same time parameter forward from conftest perform fixture initialize value.
+
+please check the code fpr more information.
+
+## indirect_parameterization
+
+https://docs.pytest.org/en/7.1.x/example/parametrize.html#indirect-parametrization
+
+read this doc example (here written example are is not working)
