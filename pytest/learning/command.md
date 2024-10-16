@@ -204,3 +204,7 @@ Run command
 pytest test_name.py -s --name=Parth 
 ```
 
+## pytest Dynamic parameterization
+
+- It is use for sending multiple different parameter from pytest fixture conftest file.
+
