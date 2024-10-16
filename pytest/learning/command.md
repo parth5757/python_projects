@@ -186,3 +186,21 @@ please check the code fpr more information.
 https://docs.pytest.org/en/7.1.x/example/parametrize.html#indirect-parametrization
 
 read this doc example (here written example are is not working)
+
+
+## yield fixture [code](Yield_fixtures/test_yield_fixtures.py)
+
+yield fixture are generate initial value and to give the result when we use that value (here when we are use result variable to print the values)
+
+Run command 
+```bash test_yield_fixtures.py ```
+
+
+## pytest addoption [code]
+
+- pytest addoption not running check documentation to know about.
+
+```bash 
+pytest test_name.py -s --name=Parth 
+```
+
