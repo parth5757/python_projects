@@ -15,11 +15,14 @@ result = [[0,0,0,0],
 
 # iterate through rows of X
 for i in range(len(X)):
+#    print(len(X), i)
    # iterate through columns of Y
    for j in range(len(Y[0])):
+    #    print(len(Y[0]), j)
        # iterate through rows of Y
        for k in range(len(Y)):
            result[i][j] += X[i][k] * Y[k][j]
+        #    print('[i][j], [i][k], [k][j]', [i],[j], [i],[k], [k],[j])
 
 for r in result:
    print(r)
