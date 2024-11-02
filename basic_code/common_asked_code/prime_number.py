@@ -15,11 +15,22 @@ def is_prime(n):
     for i in range(2, int(n ** 0.5) + 1):
         # print(int(n ** 0.5) )
         if n % i == 0:
+            print(n, i)
             return False
     return True
 
+# # Test the function
+# print(is_prime(11))  # Output: True
+# print(is_prime(4))   # Output: False
+
+
+
+
+def is_prime(n):
+    if n <= 1:
+        print("Not Prime Number")
+    ans = n ** 0.5  
+    print(ans)
 # Test the function
 print(is_prime(11))  # Output: True
-print(is_prime(4))   # Output: False
-
-
+# print(is_prime(4))   # Output: False
