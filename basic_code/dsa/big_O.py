@@ -5,7 +5,7 @@
 
 
 # Big O notation is used to measure how running time or space requirements for your program grow as input size.
-
+# Big O notation is always use in find in worst case scenario
 
         # |           
         # |                    /
@@ -108,7 +108,7 @@ nums = [3,6,2,4,3,6,8,9]
 for i in range(len(nums)):
     for j in range(i+1, len(nums)):
         if nums[i] == nums[j]:
-            print(nums[i] + "is duplicate")
+            print(nums[i], "is duplicate")
             break
 
 # time = a * n² + b
@@ -139,3 +139,28 @@ for i in range (len (nums1)): #n iterations
 # time = O(n²)
 
 
+# Measuring running space growth
+# space complexity
+
+#  search 68
+num2 = [4,9,15,21,34,57,68,91]
+
+for i in range(len(num2)):
+    if num2[i] == 68:
+        print("index is", i)
+
+# space complexity is  O(n)
+
+
+# Binary Search here use
+# [4,9,15,21,34,57,68,91] Search 68
+
+# now 21 is taken middle value
+# [4,9,15,21,34,57,68,91] from middle value to left side all element value check which is smaller then 68 so all element discarded            Iteration 1 = n/2
+
+# [34,57,68,91] now 57 is middle value and from there all left side element removed      Iteration 2 = (n/2)/2 = n/2²
+
+# [69, 91] now 57 is middle value and 68 here match it return the element      Iteration 3 = (n/2²)/2 = n/2³
+
+
+# log still remaining
