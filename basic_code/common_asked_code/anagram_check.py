@@ -9,7 +9,7 @@ def are_anagrams(str1, str2):
                     str[i] = temp    
         return str
 
-    def quick_sort(str):
+    # def quick_sort(str):
 
 
 
