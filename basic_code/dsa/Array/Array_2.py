@@ -16,3 +16,26 @@ heros = ['spider nab', 'thor', 'hulk', 'iron man', 'captain america']
 
 # length of list 
 print("total number of heros:", len(heros))
+
+# Add Black panther at last of list(Array)
+new_hero = "black panther"
+heros.append(new_hero)
+print("ADd the new hero:", heros)
+
+#You realize that you need to add 'black panther' after 'hulk',
+#so remove it from the list first and then add it after 'hulk'
+# heros.remove('black panther')
+# print(heros)
+heros.insert(3,'black panther')
+print(heros)
+
+# Now you don't like thor and hulk because they get angry easily :)
+# So you want to remove thor and hulk from list and replace them with doctor strange (because he is cool).
+# Do that with one line of code.
+heros[2:3]=['doctor strange']
+print(heros)
+
+
+#Sort the list in alphabetical order
+heros.sort()
+print(heros)
