@@ -80,3 +80,8 @@ if len(divisors) == 2:
     print(f"{n} is prime number")
 else:
     print(f"{n} is not prime number")
+
+
+# method 6
+print("method 6") # recursion 
+
