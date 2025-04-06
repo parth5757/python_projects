@@ -24,7 +24,19 @@ print(fib_list)
 
 # method 3
 print("method 3")
+fib_dict = {0: 1, 1: 1}
 for i in range(n):
     fib_dict.update({0: fib_dict[1], 1:fib_dict[0]+fib_dict[1]}) #my working logic
 print(fib_dict[0])
 
+
+# # method 4 # try for method 4 not working wrong logic not possible to do.
+# print("method 4")
+# # for i in range(n):
+# fib_dict = {0:1, 1:1}
+# for i, val in enumerate(fib_dict):
+#     fib_dict[i], fib_dict[val] = fib_dict[val], fib_dict[i] + fib_dict[val]
+# print(fib_dict)
+
+
+# Try with enumerate from online also not get perfect wanted result.
