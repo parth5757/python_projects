@@ -6,7 +6,7 @@
 
 # Big O notation is used to measure how running time or space requirements for your program grow as input size.
 # Big O notation is always use in find in worst case scenario
-
+# (Big O notation not show an always perfect time and space complexity it giv you ruff idea of them.)
         # |           
         # |                    /
         # |                  /
@@ -29,7 +29,8 @@ import time
 def foo(arr):
     begin = time.time()
     for i in range(1, arr+1):
-        print(i)
+        count =+ i
+        print(count)
     end = time.time()
     print(end - begin)
 arr1 = 10
