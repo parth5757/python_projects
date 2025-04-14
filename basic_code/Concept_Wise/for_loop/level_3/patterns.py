@@ -21,6 +21,18 @@ for i in range(n):
         num += 1
     print()
 
+# 1 
+# 1 2 
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+for i in range(n):
+    num = 1
+    for j in range(i+1):
+        print(num, end=" ")
+        num += 1
+    print()
+
 # num = 1
 # for i in range(n):
 #     total_spae = (n-i-1)
