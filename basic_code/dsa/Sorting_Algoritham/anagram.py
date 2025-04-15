@@ -1,12 +1,14 @@
+import time
 # anagrams string
 def anagrams(str1, str2):
-    def sorting(str):
-        for i in range(0, len(str)):
-            for j in range(i+1, len(str)):
-                if str[j] < str[i]:
-                    temp = str[j]
-                    str[j] =str[i]
-                    str[i] = temp
+    def sorting(val):
+        val = list(val)
+        for i in range(0, len(val)):
+            for j in range(i+1, len(val)):
+                if val[j] < val[i]:
+                    temp = val[j]
+                    val[j] =val[i]
+                    val[i] = temp
                 return str
     return sorting(str1) == sorting((str2))
     
@@ -77,42 +79,55 @@ def merge_lists(left, right):
     result.extend(right[j:])
     return ''.join(result)
 
+# # Test for Anagram using all sorting algorithms
+# anagram_strings = ["listen", "silent", "enlist", "inlets", "tinsel", "stilen", "ilents", "slinte", "ntelsi", "tlensi"]
+# sorting_algorithms = [bubble_sort, selection_sort, insertion_sort, quick_sort, merge_sort]
+
+# for algo in sorting_algorithms:
+#     print(f"Using {algo.__name__}:")
+#     # sorted_strings = [algo(string) end-start for string in anagram_strings start:=time.time() end=time.time()]
+#     timings, results = zip(*[(lambda s: (time.time() - t, res))((t := time.time()), (res := algo(string)))[1:] for string in anagram_strings])
+#     # sorting_strings = [results]
+#     print("Sorted Strings:", results)
+#     print("Are all strings anagrams?", len(set(results)) == 1)
+#     print()
+
+
 # Test for Anagram using all sorting algorithms
-anagram_strings = ["listen", "silent", "enlist", "inlets", "tinsel"]
+anagram_strings = [    'strawberry', 'stawbrerry', 'strwaberry', 'starbwerry', 'stawrberry',
+    'srawbtreyw', 'srwatberry', 'stwarbreey', 'srtawberry', 'starwbbery',
+    'wbrstarrey', 'wbrastrery', 'wbraersrtry', 'wbrertasry', 'wbrertarsy',
+    'bwrertarsy', 'bwrstarrey', 'bwrstrarey', 'brwasterry', 'brwastyrer',
+    'rbwasterry', 'rbwastyrer', 'rbswaterry', 'rbsawytter', 'rbsaytwter',
+    'arbswytter', 'arbstwyer', 'arbsytwter', 'arbytswert', 'arytbswert',
+    'raytbswert', 'ryatbswert', 'ryabtswert', 'rybastwert', 'rybawtster',
+    'yrbawtster', 'yrbwatster', 'yrbwastter', 'yrbwatsert', 'yrbwatesrt',
+    'wyrbatesrt', 'wyrbatestr', 'wyrbaetstr', 'wyrbeasttr', 'wyrbestart',
+    'ewyrbstart', 'ewyrbsartt', 'ewyrbsatrt', 'ewyrbsattr', 'ewyrbsttar',
+    'sewyrbttar', 'sewyrbtatr', 'sewyrbtart', 'sewyrtbart', 'sewyrtbrat',
+    'stewyrbrat', 'stewyrbart', 'stewyrabtr', 'stewyarbrt', 'stewyarrbt',
+    'stewarrybt', 'stewarrbyt', 'stewarbrty', 'stewarbryt', 'stewarbyrt',
+    'strawberyrt', 'strawberrty', 'strawberyt', 'strawbeytr', 'strawbetrry',
+    'strawbetry', 'strawbetrry', 'strawberyt', 'strawberytr', 'strawberrty',
+    'strawbreryt', 'strawbrert', 'strawbrtey', 'strawbrt', 'strawbrtey',
+    'strawbryet', 'strawbryte', 'strawbyrte', 'strawbyret', 'strawbyert',
+    'strawbyetr', 'strawbytre', 'strawbyt', 'strawbytr', 'strawbyrte',
+    'strawybrte', 'strawybret', 'strawybert', 'strawyebrt', 'strawyerbt',
+    'strawyertb', 'strawyetrb', 'strawyterb', 'strawytebr', 'strawyteb',
+    'strawytebr', 'strawyterb', 'strawyetrb', 'strawyertb', 'strawyerbt']
 sorting_algorithms = [bubble_sort, selection_sort, insertion_sort, quick_sort, merge_sort]
 
 for algo in sorting_algorithms:
     print(f"Using {algo.__name__}:")
-    sorted_strings = [algo(string) for string in anagram_strings]
-    print("Sorted Strings:", sorted_strings)
-    print("Are all strings anagrams?", len(set(sorted_strings)) == 1)
+    # Measure time and get results for each string
+    timings_results = []
+    for string in anagram_strings:
+        start = time.time()
+        result = algo(string)
+        timings_results.append((time.time() - start, result))
+    timings, results = zip(*timings_results)
+    
+    print("Sorted Strings:", results)
+    print("Are all strings anagrams?", len(set(results)) == 1)
+    print(f"Average time: {sum(timings)/len(timings):.6f} seconds")
     print()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def anagrams(str1, str2):
-#     def sorting(str):
-#         for i in range(0, len(str)):
-#             for j in range(i+1, len(str)):
-#                 if str[j] < str[i]:
-#                     temp = str[j]    
-#                     str[j] = str[i]    
-#                     str[i] = temp    
-#             return str
-#     return sorting(str1) == sorted(str2)
