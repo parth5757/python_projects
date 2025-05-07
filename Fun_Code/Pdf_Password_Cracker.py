@@ -24,7 +24,7 @@ def unlock_pdf(input_pdf_path, output_pdf_path, password):
                 print("Failed to decrypt the PDF. Incorrect password.")
         else:
             print("The PDF file is not encrypted.")
-    end = time.time(
+    end = time.time()
     print("The time of execution of above program is :", (end-start) * 10**3, "ms")
 def browse_file():
     root = tk.Tk()
