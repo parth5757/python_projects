@@ -15,6 +15,4 @@ for i in (enumerate(items, start=1)):
 # method 3
 print("method 3")
 a = enumerate(items)
-# print([list(i) for i in a if i[0]%2==0 ])
-list(map((lambda i: i[0]), filter(lambda i: i[0] % 2 == 0, a)))
-# list(map(lambda i: print(i[0], i[1]), filter(lambda i: i[0] % 2 == 0, a)))
+list(map(lambda i: print(i[0], i[1]), filter(lambda i: i[0] % 2 == 0 or i[0] % 2 != 0, a)))
