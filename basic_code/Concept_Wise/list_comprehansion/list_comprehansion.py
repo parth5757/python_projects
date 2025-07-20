@@ -38,4 +38,5 @@ print(palindromic)
 
 # Filter Dictionary by Value
 ages = {'John': 25, 'Alice': 19, 'Bob': 30, 'Carol': 17}
-adults = {name}
+adults = {name: age for name, age in ages.items() if age > 18}
+print(adults)
